@@ -1,0 +1,1 @@
+# Seed Template for Jquery
