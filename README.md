@@ -9,8 +9,8 @@
 
 ## Getting Started
 
-1. ```$ git clone https://github.com/ajbraus/seed-jquery.git myStarter```
-2. ```$ cd myStarter```
+1. ```$ git clone https://github.com/ajbraus/seed-jquery.git seedJquery```
+2. ```$ cd seedJquery```
 3. ```$ open index.html```
 
 
