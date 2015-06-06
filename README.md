@@ -6,6 +6,14 @@
 2. Boostrap
 3. Underscore.js
 
+
+## Getting Started
+
+1. ```$ git clone https://github.com/ajbraus/seed-jquery.git myStarter```
+2. ```$ cd myStarter```
+3. ```$ open index.html```
+
+
 ## File structure
 
 ```
@@ -16,9 +24,3 @@
  - style.css
 
 ```
-
-## How to Start the Template
-
-1. ```$ git clone https://github.com/ajbraus/seed-jquery.git myStarter```
-2. ```$ cd myStarter```
-3. ```$ open index.html```
