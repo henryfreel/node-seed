@@ -19,10 +19,10 @@
 	$ git clone git@github.com:henryfreel/node-seed.git
 	```
 
-2. 'cd' into the new directory
-```
-$ cd node-seed
-```
+2. `cd` into the new directory
+	```
+	$ cd node-seed
+	```
 
 3. If you haven't already, Install Node & NPM
  	* Standalone installer: [https://nodejs.org/download/](https://nodejs.org/download/)
@@ -34,9 +34,15 @@ $ cd node-seed
     2. Install node
 
         `brew install node`
+
 4. Install all the necessary modules
-	*```$ npm install```
+	```
+	$ npm install
+	```
+
 5. Run either `node server.js`, `npm start`, or `nodemon` (<a href="http://nodemon.io" target="_blank">docs</a>). All three commands do the same thing, which is start your server :)
+
+6. That's it!
 
 
 ## File structure
