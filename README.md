@@ -29,11 +29,15 @@
  	* Homebrew: [http://blog.teamtreehouse.com/install-node-js-npm-mac](http://blog.teamtreehouse.com/install-node-js-npm-mac)
     1. Install Homebrew:
 
-        `ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
+        ```
+        ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+        ```
 
     2. Install node
 
-        `brew install node`
+        ```
+        brew install node
+        ```
 
 4. Install all the necessary modules
 	```
