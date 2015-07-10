@@ -16,8 +16,19 @@
 
 1. ```$ git clone git@github.com:henryfreel/node-seed.git```
 2. ```$ cd node-seed```
-3. ```$ npm install```
-4. ```$ open index.html```
+3. If you haven't already, Install Node & NPM
+ 	* Standalone installer: [https://nodejs.org/download/](https://nodejs.org/download/)
+ 	* Homebrew: [http://blog.teamtreehouse.com/install-node-js-npm-mac](http://blog.teamtreehouse.com/install-node-js-npm-mac)
+    1. Install Homebrew:
+
+        `ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
+
+    2. Install node
+
+        `brew install node`
+4. Install all the necessary modules
+	*```$ npm install```
+5. Run either `node server.js`, `npm start`, or `nodemon` (<a href="http://nodemon.io" target="_blank">docs</a>). All three commands do the same thing, which is start your server :)
 
 
 ## File structure
