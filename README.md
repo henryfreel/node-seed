@@ -27,6 +27,7 @@
 3. If you haven't already, Install Node & NPM
  	* Standalone installer: [https://nodejs.org/download/](https://nodejs.org/download/)
  	* Homebrew: [http://blog.teamtreehouse.com/install-node-js-npm-mac](http://blog.teamtreehouse.com/install-node-js-npm-mac)
+ 	
     1. Install Homebrew:
 
         ```
