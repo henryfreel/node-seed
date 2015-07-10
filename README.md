@@ -1,10 +1,15 @@
-# Seed Template for Jquery
+# Seed Template for Node.js with Express, and Body-parser
 
 ## What's in the Box?
 
-1. Jquery
-2. Boostrap
-3. Underscore.js
+1. Node.js
+2. Express
+3. Underscore (server)
+4. Body-parser
+5. Underscore.js (client)
+6. Jquery
+7. Boostrap
+
 
 
 ## Getting Started
