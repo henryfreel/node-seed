@@ -14,18 +14,25 @@
 
 ## Getting Started
 
-1. ```$ git clone https://github.com/ajbraus/seed-jquery.git seedJquery```
-2. ```$ cd seedJquery```
-3. ```$ open index.html```
+1. ```$ git clone git@github.com:henryfreel/node-seed.git```
+2. ```$ cd node-seed```
+3. ```$ npm install```
+4. ```$ open index.html```
 
 
 ## File structure
 
 ```
-|seed-jquery
- - app.js
- - index.html
- - README.md
- - style.css
+|node-seed
+- README.md
+- index.js
+- package.json
+|public
+	|scripts
+		- scripts.js
+	|styles
+		- styles.css
+	|views
+		- index.html
 
 ```
