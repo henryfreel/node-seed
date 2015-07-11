@@ -31,9 +31,9 @@ $(document).ready(function() {
 
 });
 //Code to add new post
-$('#new-post').on("click", function() {
+$('#new-post').on("submit", function() {
 	var newPost = {
-		content: $newPost.val(),
+		content: $('#new-post').val(),
 		};
 	console.log(newPost);	
 	$.ajax({
