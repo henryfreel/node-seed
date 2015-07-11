@@ -7,3 +7,107 @@
   border-radius: 0px;
 }
 
+
+
+body {
+	background-color: black;
+}
+
+#newPostText {
+	width: 100%;
+	background-color: black;
+	color: white;
+	border-color: orange;
+
+
+}
+
+.well {
+	min-height: 180px;
+	background-color: black;
+	border-color: black;
+	opacity: 0.6;
+
+}
+
+h1 {
+text-align: center;
+color: white;
+
+}
+
+h2 {
+text-align: center;
+color: white;
+
+}
+
+h3 {
+text-align: center;
+color: white;
+
+}
+
+h4 {
+text-align: center;
+color: white;
+
+}
+
+h5 {
+text-align: center;
+color: white;
+
+}
+
+h6 {
+text-align: center;
+color: white;
+margin-top: 20px;
+
+}
+
+.post {
+	background-color: black;
+	color: white;
+	text-align: center;
+	font-size: 24px;
+}
+
+
+
+.pull-right {
+	text-align: right;
+	color: white;
+}
+
+#characters_remaining {
+	color: white;
+}
+
+.btn {
+	margin-top: 20px;
+
+	
+}
+
+.jumbotron {
+
+
+    background-image: url("http://barnimages.com/wp-content/uploads/2015/06/PG0906_BarnImages.com_-4-1024x683.jpg");
+    background-size: cover;
+    color: white;
+    /*max-height: 50px;*/
+
+}
+
+.jumbotron h1 {
+
+margin-top: auto;
+font-size: 40px;
+vertical-align: middle;
+
+   
+
+}
+
