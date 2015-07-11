@@ -31,23 +31,31 @@ $(document).ready(function() {
 
 });
 //Code to add new post
-$('#new-post').on("submit", function() {
+$('#new-post').on("click", function() {
+	console.log("Submitted form!");
 	var newPost = {
 		content: $('#new-post').val(),
 		};
+	
 	console.log(newPost);	
 	$.ajax({
 		type: "POST",
 		url: "/api/posts",
 		data: newPost,
 		success: function() {
-			window.location.reload();
+		console.log("Sent data!");
+		//	window.location.reload();
 		},
 		error: function() {
 			alert("Error!");
 		}
 	});
  });
+
+// //Test if JS is working
+// $('#newIdea').on("click", function() {
+// 	console.log("Javascript is working!");
+// });
 
 
 
