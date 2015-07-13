@@ -33,8 +33,8 @@
 <div class="container">
   <div class="row">
     <div class="span4 well" style="padding-bottom:0">
-            <form accept-charset="UTF-8" action="" method="POST" id ="newPost" class = "new-post">
-                <textarea class="span4" id="newPostText" name="newposttext"
+            <form accept-charset="UTF-8" action="/api/posts" method="POST" id ="newPost" class = "newPost">
+                <textarea class="span4" id="newPostText" name="newPostText"
                 placeholder="Describe what you would want from this service" maxlength="280" rows="3"></textarea>
                 <h6 class="pull-right"><span id="characters_remaining">280</span>
                     characters remaining</h6>
@@ -45,9 +45,9 @@
   </div>
 </div>
 
-<div>
+<!-- <div>
 <button type="button" id = "newIdea" class="btn btn-primary btn-round-lg btn-lg">New Idea</button>
-</div>
+</div> -->
 <!-- Add history of posts -->
 <div class="container">    
     <h2> Top Posts</h2>
