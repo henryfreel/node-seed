@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Seed-Jquery</title>
-
+    <title>Start-up Databank Posts</title>
+    <link rel="shortcut icon" type="image/x-icon" href="http://i.imgur.com/EO1uCoet.png">
     <!-- STYLES -->
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
@@ -16,26 +16,50 @@
     <link rel="stylesheet" href="styles/styles.css">
 
   </head>
-  <body>
-    <nav class="navbar navbar-inverse">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="#">
-            Seed-Jquery
-          </a>
-        </div>
-      </div>
-    </nav>
+  
+   <body>
+    
 
-    <div class='container'>
-      <h1>Start a new project with this</h1>
-      <h4>Here's what's in the box</h4>
-      <ul>
-        <li><a href="http://en.wikipedia.org/wiki/JQuery">Jquery</a>: to simplify manipulating the DOM and getting data from servers (AJAX)</li>
-        <li><a href="http://en.wikipedia.org/wiki/Bootstrap_%28front-end_framework%29">Twitter Boostrap</a>: to simplify styling and some basic UX/UI</li>
-        <li><a href="http://en.wikipedia.org/wiki/Underscore.js">Underscore.js</a>: for making Javascript awesome.</li>
-      </ul>
+<div class="jumbotron">
+  
+  <h1>Shazam for Food!</h1 >
+
+
+  
+
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="span4 well" style="padding-bottom:0">
+            <form accept-charset="UTF-8" action="/api/posts" method="POST" id ="newPost" class = "newPost">
+                <textarea class="span4" id="newPostText" name="newPostText"
+                placeholder="Describe what you would want from this service" maxlength="280" rows="3"></textarea>
+                <h6 class="pull-right"><span id="characters_remaining">280</span>
+                    characters remaining</h6>
+                <button class="btn btn-info" id = "submit" type="submit">Make New Post</button>
+            </form>
+        </div>
     </div>
+  </div>
+</div>
+
+<!-- <div>
+<button type="button" id = "newIdea" class="btn btn-primary btn-round-lg btn-lg">New Idea</button>
+</div> -->
+<!-- Add history of posts -->
+<div class="container">    
+    <h2> Top Posts</h2>
+    <hr>
+</div>
+ 
+ <div id="postList"></div>
+
+                            </div> 
+                        </div>
+                    </div>
+                </div>
 
     <!-- SCRIPTS -->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -45,7 +69,20 @@
     <!-- Latest compiled and minified JavaScript for Underscore.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
     <!-- YOUR SCRIPTS -->
-    <script src="scripts/script.js"></script>
+    <script type = "text/javascript" src="scripts/script.js"></script>
+
+    <script type="text/template" id="postTemplate">
+
+      <div class="post"> 
+      <p>       
+            <span class="post-body">
+                <%= content %>
+
+            </span>
+       </p>
+       <br>                       
+      </div>
+</script>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
