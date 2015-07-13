@@ -21,7 +21,7 @@ $(document).ready(function() {
 	var $postList = $('#postList');
 	var $newPost = $('#newPost');
 
-//Code to show all wines here
+//Code to show all posts here
 	$.ajax({
 		url: "/api/posts",
 		type: "GET",
@@ -36,22 +36,28 @@ $(document).ready(function() {
 
 
 //Code to add new post
-$("#newPost").on("submit", function() {
+$("#newPost").on("submit", function(event) {
 	console.log("Submitted form!");
-
-	var newPost = {
-		content: $("#newPost").val(),
-
-		};
+	event.preventDefault();
 	
+
+	var $content = {content:$("#newPostText").val()};
+
+	console.log($content);
 		
 	$.ajax({
 		type: "POST",
+		contentType: 'application/json',
+		dataType: 'json',
 		url: "/api/posts",
-		data: newPost,
+		data: $content,
+		
 		success: function() {
-		window.location.reload();
 		console.log("Sent data!");
+		console.log($("#newPost").val());
+		console.log($("#newPostText").val());
+		$("#postList").append(postTemplate($content));
+		//window.location.reload();
 		
 		},
 		error: function() {
