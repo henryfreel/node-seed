@@ -5,6 +5,8 @@ var express = require('express'),
 
 // tell app to use bodyParser middleware
 app.use(bodyParser.urlencoded({extended: true}));
+
+// serve js and css files from public folder
 app.use(express.static(__dirname + '/public'));
 
 var users = [
@@ -18,7 +20,7 @@ var users = [
   }
 ];
 
-// set up root route to respond with 'hello world'
+// set up root route to respond with index.html
 app.get('/', function(req, res) {
   res.sendFile(__dirname + '/public/views/index.html');
 });
