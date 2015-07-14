@@ -43,21 +43,20 @@ $("#newPost").on("submit", function(event) {
 
 	var $content = {content:$("#newPostText").val()};
 
-	console.log($content);
+	console.log("Content:",$content);
 		
 	$.ajax({
 		type: "POST",
-		contentType: 'application/json',
-		dataType: 'json',
+		// contentType: 'application/json',
+		// dataType: 'json',
 		url: "/api/posts",
 		data: $content,
 		
-		success: function() {
+		success: function(data) {
 		console.log("Sent data!");
-		console.log($("#newPost").val());
-		console.log($("#newPostText").val());
-		$("#postList").append(postTemplate($content));
-		//window.location.reload();
+		console.log(data);
+		$("#postList").append(postTemplate(data));
+	//	window.location.reload();
 		
 		},
 		error: function() {
@@ -65,6 +64,7 @@ $("#newPost").on("submit", function(event) {
 		}
 	});
  
+
 
 
 
